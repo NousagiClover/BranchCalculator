@@ -1,0 +1,76 @@
+/* filepath: c:\Users\fkoki\Desktop\分岐値計算サイト\style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#calc {
+  display: block;
+  width: 320px;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 18px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#calc:hover {
+  background-color: #0056b3;
+}
+
+#clear {
+  display: block;
+  width: 320px;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 18px;
+  color: white;
+  background-color: #DC3545;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#clear:hover {
+  background-color: #a71d2a;
+}
+
+#copy {
+  display: block;
+  width: 320px;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 18px;
+  color: white;
+  background-color: #28A745;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#copy:hover {
+  background-color: #1f7d34;
+}
