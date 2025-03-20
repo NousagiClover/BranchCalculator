@@ -1,9 +1,10 @@
-let fromAddress = document.getElementById("fromAddress");
-let toAddress = document.getElementById("toAddress");
-let result = document.getElementById("result");
-let calc = document.getElementById("calc");
-let clear = document.getElementById("clear");
-let copy = document.getElementById("copy");
+const fromAddress = document.getElementById("fromAddress");
+const toAddress = document.getElementById("toAddress");
+const result = document.getElementById("result");
+const calc = document.getElementById("calc");
+const clear = document.getElementById("clear");
+const copy = document.getElementById("copy");
+const swap = document.getElementById("swap");
 
 function isHex(str)
 {
@@ -58,4 +59,12 @@ copy.addEventListener("click", function()
 {
   navigator.clipboard.writeText(result.innerText);
   alert("コピーしました\n" + result.innerText);
+});
+
+swap.addEventListener("click", function()
+{
+  let tmp = fromAddress.value;
+  fromAddress.value = toAddress.value;
+  toAddress.value = tmp;
+  calc.click();
 });
